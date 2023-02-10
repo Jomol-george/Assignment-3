@@ -1,0 +1,36 @@
+/* Author:JOMOL GEORGE
+Date:09-02-2023 */
+.main {
+    background-image: url("../images/travel.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form_box {
+    height: 90vh;
+    background-color:#FCC2FC;
+}
+h3::after{
+    content: "*";
+    color:red;
+}
+h4::before{
+    content: "*";
+    color:red;
+}
+@media screen and (max-width: 576px) {
+    .f1 {
+        display: none;
+    }
+    .main {
+        background-color: aquamarine;
+        background-image: none;
+        height:110vh;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .form_box{
+        height: 100vh;
+    }
+    
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TRAVEL</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="main container-fluid row">
+            <h1 class="text-center col-12 p-0 m-0">Travel reservation from</h1>
+            <form action="" onsubmit="return validate()">
+                <div class="form_box p-0 m-0 col-6 row mx-5 border rounded-4 bg-light oppacity-60">
+                    <h4 class="fs-5">Denotes mandatory</h3>
+                    <h3 class="fs-6">Full name</h3>
+                    <input
+                        type="text"
+                        name="fname"
+                        placeholder="FirstName Last Name"
+                        id="fn"
+                    />
+                    <p id="n"></p>
+
+                    <h3 class="fs-6">Email address:</h3>
+                    <input type="text" name="email" id="em" placeholder="abcd@gmail.com" />
+                    <p id="eml"></p>
+                    <h3 class="fs-6">Select Toure Package:</h3>
+                    <select name="tour" id="p">
+                        <option value="select">Select</option>
+                        <option value="goa">Goa</option>
+                        <option value="malaisia">Malaisia</option>
+                        <option value="kulu">kulu</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Dubai">Dubai</option>
+                    </select>
+                    <h3 class="fs-6">Arrival date:</h3>
+                    <input type="date" name="d" placeholder="m/d/y" id="dte" />
+                    <p id="dt"></p>
+                    <h3 class="fs-6">Number of persons:</h3>
+                    <input type="text" name="pdetails" id="p1" />
+                    <p id="np"></p>
+                    <h3 class="fs-6 row">What would you want to avail?:</h3>
+                    <div class="col-12">
+                        <label for="boating">Boating</label
+                        ><input  type="checkbox" name="a" id="boating"  />
+                        <label  for="fooding">Fooding</label
+                        ><input type="checkbox" name="a" id="fooding" />
+                        <label for="sightseeing">Sight seeing</label
+                        ><input type="checkbox" name="a" id="sightseeing" />
+                        <p id="ch"></p>
+                    </div>
+                    <h3 class="fs-6">Discount Coupon code:</h3>
+                    <input type="text" name="c" />
+                    <h3 class=" fs-6 row">Terms and conditions:</h3>
+                    <div class="col-12 ">
+                        <input class=" col-2" type="radio" name="agree" id="agree" /><label class=" col-2"
+                            for="agree"
+                            >I agree</label
+                        >
+                        <input class=" col-2" type="radio" name="agree" id="diss" /><label class=" col-2"
+                            for="agree"
+                            >I disagree</label
+                        >
+                    </div>
+                    <input 
+                        type="submit"
+                        id="btn"
+                        class="row  col-5 align-items-center btn btn-info mx-auto"
+                    />
+                </div>
+            </form>
+            <div class="col-6 f1"></div>
+        </div>
+        <!-- container div closed -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
